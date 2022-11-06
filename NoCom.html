@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NoCom real!!</title>
+  <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css'><link rel="stylesheet" href="./NoCom/css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container">
+  <div id="map">
+    <div id="canvascontainer">
+    <canvas id="canvas"></canvas>
+    </div>
+    <div id="results">Drag around and move mouse over nocom map to show pixel values, nether and overworld coords.</div>
+  </div>
+  <div id="sidebar">
+    <br />
+    <br />
+    <h1>2b2t Nocom Coordinate Finder</h1>
+    <br />
+    <h4>Pro tips: </h4>
+    <ul>
+      <li>Click on the nocom map on the left to update coords below</li>
+      <li>You can drag the map around and zoom in/out using the scroll wheel</li>
+      <li>You can also manually enter pixel values or coords below</li>
+      <li>You should search ±400 blocks in every direction when base hunting</li>
+      <li>Supports: X(-245760 to +245759), Z (-138240 to +138239)</li>
+    </ul>
+    <br />
+    <br />
+    <strong>Pixel X: </strong>
+    <input id="x" type="number" value=1920 min=0 max=3840 onInput="onPixelXInput()" />
+    <br />
+    <strong>Pixel Y: </strong>
+    <input id="y" type="number" value=1080 min=0 max=2160 onInput="onPixelYInput()" />
+    <br />
+    <hr />
+    <br />
+    <strong>Nether Coordinates:</strong><br />
+    <strong>X: </strong><input id="nether-x" value=0 type="number" onInput="onNetherXInput()" /><br />
+    <strong>Z: </strong><input id="nether-z" value=0 type="number" onInput="onNetherZInput()" /><br />
+    <br />
+    <strong>Overworld Coordinates:</strong><br />
+    <strong>X: </strong><input id="overworld-x" value=0 type="number" onInput="onOverworldXInput()" /><br />
+    <strong>Z: </strong><input id="overworld-z" value=0 type="number" onInput="onOverworldZInput()" /><br />
+    <br />
+    <hr />
+    <br />
+    <br />
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./NoCom/javascript/script.js"></script>
+
+</body>
+</html>
